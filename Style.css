@@ -1,0 +1,964 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&dispaly=swap');
+
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: all .2s linear;
+    line-height: 1.5;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background: #363a38;
+    /* padding: 2rem; */
+}
+
+
+/* .navbar{
+    overflow: hidden;
+     background-color: aqua;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}  */
+
+/* .navbar{
+    background-color: #ee070f;
+    position: absolute;
+    position: fixed;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+   
+   
+   
+} */
+
+
+header .navbar a{
+    display: inline-block;
+   
+    font-size: 1.5rem;
+    color: #fff;
+    margin: -27rem ;
+    margin-top: 10px;
+    margin-left: 35rem;
+    top: 0;
+    
+}
+
+header .navbar a:hover{
+    letter-spacing: 0.3rem;
+    color: red;
+}
+
+
+.home  .content img{
+    width: 100%;
+    position: relative;
+    height: 580px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+
+.home .content {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+
+.home .content  .text h3{
+    position: absolute;
+    top: 26%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-family: cursive;
+    font-style: italic;
+    color: red;
+}
+
+
+
+.home .content  .text h1{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-family: cursive;
+    font-style: italic;
+    color: white;
+}
+
+
+.home .content  .text h2{
+    position: absolute;
+    top: 45%;
+    left: 26.5%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-family: cursive;
+    font-style: italic;
+    color: white;
+}
+
+
+.home .content  .get{
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-family: cursive;
+    font-style: italic;
+    color: white;
+    
+}
+
+
+
+.home .content  .get button{
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .5rem;
+    font-family:sans-serif;
+    border: 1px solid red;
+    height: 35px;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+}
+
+
+.home .content  .get button:hover{
+    letter-spacing: 0.3rem;
+    color: whitesmoke;
+}
+
+
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8rem;
+  }
+  
+  .about .image {
+            position: relative;
+            margin-left: .5rem;
+    }
+
+  .about .image img {
+     width: 100%;
+    height: 600px;
+    padding: 15px;
+    filter: brightness(100%);
+   }
+
+   .about .image:hover{
+    width: 43%;
+    
+   }
+
+  .about .image::before, .about .image::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #f00;
+    height: 15rem;
+    width: 15rem;
+  }
+
+  
+  .about .image::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .about .image::after {
+    bottom: 0;
+    right: 0;
+  }
+
+
+  .about .content1 span {
+    font-size: 3rem;
+    color: red;
+    font-family: monospace;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: lighter;
+    /* text-shadow: 3px 3px  yellowgreen; */
+    position: absolute;
+    top: 67rem;
+    left: 53%;
+    transform: translate(-50% ,-50%);
+  }
+
+
+  .about .content1 h1{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 71rem;
+    left: 62%;
+    transform: translate(-50% ,-50%);
+  }
+
+
+  .about .content1 h3{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 75rem;
+    left: 56%;
+    transform: translate(-50% ,-50%);
+  }
+
+
+  .about .content1 p{
+    font-size: 1.2rem;
+    color: orange;
+    position: absolute;
+    top: 83rem;
+    left: 65%;
+    transform: translate(-50% ,-50%);
+    text-align: left;
+  }
+
+
+  .about  .box-container{
+    position: absolute;
+    top: 107rem;
+    left: 65%;
+    transform: translate(-50% ,-50%);
+    
+}
+
+
+.about  .box-container{
+    flex:1 1 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+
+.about  .box-container .box{
+   
+    flex: 1 1 15rem;
+    background: #fff;
+    padding: 2rem;
+    margin: 0;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+.about  .box-container .box:hover{
+    letter-spacing: 0.1rem;
+    color: red;
+}
+
+
+.about  .box-container .box h3{
+    color: var(--main-color);
+    font-size: 2.2rem;
+}
+
+
+.about  .box-container .box p{
+    color: #666;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+
+
+.features .bottom-line{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #535356;
+}
+
+.features .gym-text{
+     border: 2px solid #535356;
+     width: 200px;
+     height: 50px;
+     padding-top: 7px;
+     padding-left: 30px;
+     font-family: cursive;
+     font-style: italic;
+     color: #f00;
+     font-size: 2rem;
+     margin-left: 43%;
+     margin-top: -4%;
+     background-color: black;
+}
+
+
+.features  .gym-features .f-image1 {
+      margin: 40px;
+      filter: brightness(100%);
+}
+
+/* .features  .gym-features .f-image1:hover img{
+    height: 33.5%;
+    width: 33.5%;
+} */
+
+
+.features .gym-features .f-image2{
+   
+    margin-left: 64.7%;
+    margin-top: -27.3%; 
+}
+
+
+
+.features  .gym-features  .icon-1{
+    margin-left: 44%;
+    margin-top: -24.5%;
+}
+
+
+.features  .gym-features  .icon-1 h1{
+    color: red;
+    font-size: 3rem;
+    margin-left: -15px;
+}
+
+
+.features  .gym-features  .icon-1 p{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    margin-left: -10rem;
+    margin-top: 1rem;
+}
+
+
+.features  .gym-features  .icon-1 h6{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    margin-left: -3rem;
+    margin-top: -1rem;
+}
+
+.features  .gym-features  .icon-1 .read-button{
+    border: 2px solid red;
+    height: 35px;
+    border-bottom-right-radius: 2rem;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .5rem;
+    font-family:sans-serif;
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+}
+
+
+.features  .gym-features  .icon-1  .read-button:hover{
+    letter-spacing: 0.3rem;
+    color: whitesmoke;
+}
+
+
+
+
+.features  .gym-features  .f-image3{
+    margin-left: 34%;
+    margin-top: 2.5rem;
+    display: block;
+}
+
+
+
+.features  .gym-features  .icon-2{
+   margin-left: 10rem;
+   margin-top: -29rem;
+}
+
+#more{
+    display: none;
+}
+
+
+
+.features  .gym-features  .icon-2 h1{
+    color: red;
+    font-size: 3rem;
+    margin-left: -15px;
+}
+
+
+.features  .gym-features  .icon-2 p{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    margin-left: -6rem;
+    margin-top: 1rem;
+}
+
+
+.features  .gym-features  .icon-2 h6{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    margin-left: -6rem;
+    margin-top: -1rem;
+}
+
+.features  .gym-features  .icon-2 .read-button{
+    border: 2px solid red;
+    height: 35px;
+    border-bottom-right-radius: 2rem;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .5rem;
+    font-family:sans-serif;
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+}
+
+
+.features  .gym-features  .icon-2 .read-button:hover{
+    letter-spacing: 0.3rem;
+    color: whitesmoke;
+}
+
+
+
+
+.features  .gym-features  .icon-3{
+    margin-left: 95rem;
+    margin-top: -28rem;
+ }
+
+ #moreText{
+    display: none;
+}
+
+
+ .features  .gym-features  .icon-3 h1{
+    color: red;
+    font-size: 3rem;
+    margin-left: -30px;
+}
+
+
+.features  .gym-features  .icon-3 p{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    margin-left: -6rem;
+    margin-top: 1rem;
+}
+
+
+/* .features  .gym-features  .icon-3 h6{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    margin-left: -6rem;
+    margin-top: -1rem;
+} */
+
+.features  .gym-features  .icon-3 .read-button{
+    border: 2px solid red;
+    height: 35px;
+    border-bottom-right-radius: 2rem;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .5rem;
+    font-family:sans-serif;
+    margin-top: 1.5rem;
+    cursor: pointer;
+
+}
+
+
+.features  .gym-features  .icon-3 .read-button:hover{
+    letter-spacing: 0.3rem;
+    color: whitesmoke;
+}
+
+
+
+
+.price  .plan1{
+    margin-left: 32%;
+    margin-top: 10rem;
+    border: 2px solid #2c2c28;
+    width: 40rem;
+    height: 51rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #282826;
+    border-bottom-right-radius: 7rem;
+    
+}
+
+
+
+.price  .plan1  .basic-plan{
+    font-size: 5rem;
+    font-family: times;
+    color: white;
+}
+
+
+
+.price  .plan1 h1{
+    font-size: 3.5rem;
+    font-family: serif;
+    color: white;
+}
+
+
+.price  .plan1 h1 span{
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-style: italic;
+    color: orangered;
+}
+
+
+.price  .plan1 p{
+    font-size: 2.5rem;
+    font-family:cambria;
+     color: white;
+}
+
+
+.price  .plan1 .get{
+    border: 2px solid orange;
+    height: 35px;
+    border-bottom-right-radius: 2rem;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .5rem;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+
+
+.price  .plan1 .get:hover{
+    letter-spacing: 0.3rem;
+    color: whitesmoke;
+}
+
+
+
+
+.price  .plan2{
+    margin-left: 65%;
+    margin-top: -48.5rem;
+    text-align: center;   
+}
+
+
+.price  .plan2  .premium-plan{
+    font-size: 5rem;
+    font-family: times;
+    color: white;
+}
+
+
+.price  .plan2 h1{
+    font-size: 3.5rem;
+    font-family: serif;
+    color: white;
+}
+
+
+.price  .plan2 h1 span{
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-style: italic;
+    color: orangered;
+}
+
+
+.price  .plan2 p{
+    font-size: 2.5rem;
+    font-family:cambria;
+     color: white;
+}
+
+
+.price  .plan2 .get{
+    border: 2px solid orangered;
+    height: 35px;
+    border-bottom-right-radius: 2rem;
+    background-color: orangered;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .5rem;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+
+
+.price  .plan2 .get:hover{
+    letter-spacing: 0.3rem;
+    color: whitesmoke;
+}
+
+
+
+.price  .exercise{
+    margin-left: -70%;
+    margin-top: -38%;
+    text-align: center;   
+}
+
+
+
+.price  .exercise  .best-exercise{
+    font-size: 5rem;
+    font-family: times;
+    color: white;
+}
+
+
+.price  .exercise h1{
+    font-size: 2.5rem;
+    font-family: serif;
+    color: orangered;
+}
+
+
+
+.price  .exercise p{
+    font-size: 2.5rem;
+    font-family:cambria;
+     color: white;
+     line-height: 5rem;
+    
+}
+
+
+.price  .exercise  p span{
+    font-size: 2.5rem;
+    font-family:cambria;
+     color: rgb(225, 93, 11);
+     line-height: 5rem;
+     text-align: justify;
+    
+} 
+
+
+
+
+.trainers .bottom-line1{
+    margin-top: 8rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #535356;
+}
+
+
+
+.trainers .trainer-text{
+    border: 2px solid #535356;
+     width: 210px;
+     height: 50px;
+     padding-top: 7px;
+     padding-left: 30px;
+     font-family: cursive;
+     font-style: italic;
+     color: #f00;
+     font-size: 2rem;
+     margin-left: 43%;
+     margin-top: -4%;
+     background-color: black;
+}
+
+
+
+
+.trainers .trainers-image   .image1{
+    width: 22%;
+    height: 30%;
+    margin-left: 6rem;
+    margin-top: 5rem;
+}
+
+
+
+
+.trainers .trainers-image   .image2{
+    width: 22%;
+    height: 30%;
+    margin-left: .5rem;
+    margin-top: 5rem;
+}
+
+
+.trainers .trainers-image   .image2{
+    width: 22%;
+    height: 30%;
+    margin-left: .5rem;
+    margin-top: 5rem;
+}
+
+
+
+.trainers .trainers-image   .image2{
+    width: 22%;
+    height: 30%;
+    margin-left: .5rem;
+    margin-top: 5rem;
+}
+
+
+
+
+.discount .join{
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+    font-family:sans-serif;
+    margin-top: 15rem;
+
+}
+
+
+.discount .get{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.discount .get .text{
+    font-size: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;  
+}
+
+
+.discount .get .discount{
+    border: 2px solid orange;
+    height: 35px;
+    border-bottom-right-radius: 2rem;
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-top: .1rem;
+    padding-right: 3rem;
+    padding-bottom: .1rem;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+
+
+.discount .get .discount:hover{
+    letter-spacing: 0.4rem;
+    color: whitesmoke;
+}
+
+
+
+.links {
+    font-size: 3rem;
+    color: white;
+    margin-top: 5rem;
+    margin-left: 8%;
+
+}
+
+
+.links ul li a{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    color: white;
+    line-height: 2;
+    
+}
+
+
+.hours{
+    font-size: 3rem;
+    color: white;
+    margin-top: -24%;
+    margin-left: 32%;
+}
+
+.hours p{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.hours p span{
+    color: orangered;
+    font-size: 2rem;
+}
+
+
+.contact {
+    font-size: 3rem;
+    color: white;
+    margin-top: -32%;
+    margin-left: 67%;
+   
+}
+
+.contact p{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact p span{
+    font-size: 2rem;
+    color: orangered;
+}
+
+
+
+.footer{
+    
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    background: rgb(8, 8, 8);
+    margin-top: 25rem;
+    margin-bottom: 3.5rem;
+}
+
+
+
+.footer span{
+    color: orangered;
+}
+
+
+/* Your existing CSS code here */
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styling for smaller screens */
+    header .navbar a {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  
+    /* Add more media query adjustments as needed */
+  }
+  
+  /* Add more media queries for different screen sizes */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+/* header .befit{
+    color: red;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -1em;
+}
+
+
+header .befit span{
+    color: white;
+} */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media  screen and (max-width: 600px){
+    .topnav a:not(:first-child)
+    {display: none;}
+
+    .topnav a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+
+
+@media  screen and (max-width: 600px) {
+        
+    .topnav.reponsive{position: relative;}
+
+    .topnav.reponsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.reponsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+} */
